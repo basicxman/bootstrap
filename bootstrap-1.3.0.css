@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu Sep  8 10:45:51 PDT 2011
+ * Date: Thu  8 Sep 2011 21:58:09 EDT
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -1676,10 +1676,30 @@ footer {
   -o-transition: 0.1s linear all;
   transition: 0.1s linear all;
 }
+.btn.primary:hover {
+  -webkit-box-shadow: 1px 1px #004b9a, 2px 2px #004b9a, 3px 3px #004b9a, 4px 4px #004b9a, 5px 5px #004b9a, 6px 6px #004b9a;
+  -moz-box-shadow: 1px 1px #004b9a, 2px 2px #004b9a, 3px 3px #004b9a, 4px 4px #004b9a, 5px 5px #004b9a, 6px 6px #004b9a;
+  box-shadow: 1px 1px #004b9a, 2px 2px #004b9a, 3px 3px #004b9a, 4px 4px #004b9a, 5px 5px #004b9a, 6px 6px #004b9a;
+}
+.btn.info:hover {
+  -webkit-box-shadow: 1px 1px #287a91, 2px 2px #287a91, 3px 3px #287a91, 4px 4px #287a91, 5px 5px #287a91, 6px 6px #287a91;
+  -moz-box-shadow: 1px 1px #287a91, 2px 2px #287a91, 3px 3px #287a91, 4px 4px #287a91, 5px 5px #287a91, 6px 6px #287a91;
+  box-shadow: 1px 1px #287a91, 2px 2px #287a91, 3px 3px #287a91, 4px 4px #287a91, 5px 5px #287a91, 6px 6px #287a91;
+}
+.btn.success:hover {
+  -webkit-box-shadow: 1px 1px #458845, 2px 2px #458845, 3px 3px #458845, 4px 4px #458845, 5px 5px #458845, 6px 6px #458845;
+  -moz-box-shadow: 1px 1px #458845, 2px 2px #458845, 3px 3px #458845, 4px 4px #458845, 5px 5px #458845, 6px 6px #458845;
+  box-shadow: 1px 1px #458845, 2px 2px #458845, 3px 3px #458845, 4px 4px #458845, 5px 5px #458845, 6px 6px #458845;
+}
+.btn.danger:hover {
+  -webkit-box-shadow: 1px 1px #9c302a, 2px 2px #9c302a, 3px 3px #9c302a, 4px 4px #9c302a, 5px 5px #9c302a, 6px 6px #9c302a;
+  -moz-box-shadow: 1px 1px #9c302a, 2px 2px #9c302a, 3px 3px #9c302a, 4px 4px #9c302a, 5px 5px #9c302a, 6px 6px #9c302a;
+  box-shadow: 1px 1px #9c302a, 2px 2px #9c302a, 3px 3px #9c302a, 4px 4px #9c302a, 5px 5px #9c302a, 6px 6px #9c302a;
+}
 .btn:hover {
-  background-position: 0 -15px;
-  color: #333;
-  text-decoration: none;
+  -webkit-box-shadow: 1px 1px #cdcdcd, 2px 2px #cdcdcd, 3px 3px #cdcdcd, 4px 4px #cdcdcd, 5px 5px #cdcdcd, 6px 6px #cdcdcd;
+  -moz-box-shadow: 1px 1px #cdcdcd, 2px 2px #cdcdcd, 3px 3px #cdcdcd, 4px 4px #cdcdcd, 5px 5px #cdcdcd, 6px 6px #cdcdcd;
+  box-shadow: 1px 1px #cdcdcd, 2px 2px #cdcdcd, 3px 3px #cdcdcd, 4px 4px #cdcdcd, 5px 5px #cdcdcd, 6px 6px #cdcdcd;
 }
 .btn.primary {
   color: #fff;

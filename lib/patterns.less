@@ -471,6 +471,13 @@ footer {
 // BUTTON STYLES
 // -------------
 
+// Box shadow mixin.
+.straight-box-shadow(@colour: #ffffff) {
+  -webkit-box-shadow: 1px 1px @colour, 2px 2px @colour, 3px 3px @colour, 4px 4px @colour, 5px 5px @colour, 6px 6px @colour;
+  -moz-box-shadow: 1px 1px @colour, 2px 2px @colour, 3px 3px @colour, 4px 4px @colour, 5px 5px @colour, 6px 6px @colour;
+  box-shadow: 1px 1px @colour, 2px 2px @colour, 3px 3px @colour, 4px 4px @colour, 5px 5px @colour, 6px 6px @colour;
+}
+
 // Base .btn styles
 .btn {
   // Button Base
@@ -488,11 +495,11 @@ footer {
   @shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
   .box-shadow(@shadow);
 
-  &:hover {
-    background-position: 0 -15px;
-    color: #333;
-    text-decoration: none;
-  }
+  &.primary:hover { .straight-box-shadow(#004b9a); }
+  &.info:hover    { .straight-box-shadow(#287a91); }
+  &.success:hover { .straight-box-shadow(#458845); }
+  &.danger:hover  { .straight-box-shadow(#9c302a); }
+  &:hover         { .straight-box-shadow(#cdcdcd); }
 
   // Primary Button Type
   &.primary {
