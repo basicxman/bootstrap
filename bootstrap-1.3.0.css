@@ -6,7 +6,7 @@
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
- * Date: Thu  8 Sep 2011 21:58:09 EDT
+ * Date: Thu  8 Sep 2011 23:00:27 EDT
  */
 /* Reset.less
  * Props to Eric Meyer (meyerweb.com) for his CSS reset file. We're using an adapted version here	that cuts out some of the reset HTML elements we will never need here (i.e., dfn, samp, etc).
@@ -1865,6 +1865,33 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 .alert-message.block-message.info {
   background-color: #ddf4fb;
   border-color: #c6edf9;
+}
+.alert-message.note {
+  position: relative;
+  border: 0;
+}
+.alert-message.note:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 16px solid #fbedb9;
+  border-right: 16px solid transparent;
+  display: block;
+  -webkit-box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: -1px -1px 1px rgba(0, 0, 0, 0.3);
+  width: 0;
+}
+.alert-message.note:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 16px solid #fff;
+  border-left: 16px solid transparent;
+  display: block;
+  width: 0;
 }
 .pagination {
   height: 36px;
